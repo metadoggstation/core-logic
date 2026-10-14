@@ -1,8 +1,10 @@
-export type WeatherState = 'TURBULENCE' | 'STAGNANT' | 'CLEAR';
+import type { WeatherState } from '../types';
+
+export type { WeatherState } from '../types';
 
 const DICE_OUTCOMES = 6;
 
-const getProbabilities = (weather: WeatherState): number[] => {
+export const getProbabilities = (weather: WeatherState): number[] => {
   switch (weather) {
     case 'TURBULENCE':
       return [0.3, 0.1, 0.1, 0.1, 0.1, 0.3];

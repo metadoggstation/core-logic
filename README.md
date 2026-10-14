@@ -19,3 +19,17 @@
 
 - **For Devs**: `good first issue` ラベルのついたタスクからチェックしてください。
 - **For Non-Devs**: Discussionsタブで「新しい危機の定義」や「PAの出店案」を提案してください。
+
+### 📦 Core Logic Package
+Build the TypeScript package with `npm run build`. Consumers can import the public API
+from the package root:
+
+```ts
+import {
+  BASE_COST,
+  calculateFuelConsumption,
+  calculateWeightedDiceRoll,
+  type KnotMetrics,
+  type WeatherState,
+} from 'core-logic';
+```

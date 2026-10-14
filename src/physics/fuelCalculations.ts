@@ -1,13 +1,7 @@
-import type { WeatherState } from './diceMechanics';
+import { BASE_COST, TARGET_BASE_GAS, WEATHER_MULTIPLIERS } from '../constants';
+import type { WeatherState } from '../types';
 
-export const BASE_COST = 1;
-export const TARGET_BASE_GAS = 30;
-
-const WEATHER_MULTIPLIERS: Record<WeatherState, number> = {
-  TURBULENCE: 1.8,
-  STAGNANT: 1.2,
-  CLEAR: 1.0,
-};
+export { BASE_COST, TARGET_BASE_GAS, WEATHER_MULTIPLIERS } from '../constants';
 
 export const calculateFuelConsumption = (
   diceRoll: number,
